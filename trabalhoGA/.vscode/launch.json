@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/joaoaccorsi/Library/Mobile Documents/com~apple~CloudDocs/Study/University/2024.02/Ciencia de Dados e Big Data/Trabalho GA/ciencia-de-dados/trabalhoGA",
+      "program": "/Users/joaoaccorsi/Library/Mobile Documents/com~apple~CloudDocs/Study/University/2024.02/Ciencia de Dados e Big Data/Trabalho GA/ciencia-de-dados/trabalhoGA/build/Debug/outDebug"
+    }
+  ]
+}
