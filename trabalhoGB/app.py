@@ -1,14 +1,22 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import plotly.express as px
+
+import data_handler
+from data_analysis import data_analysis
 
 st.title('Trabalho GB - Streamlit')
 
+data = data_handler.load_data()
 model = pickle.load(open('./models/alzheimer_diagnosis_model.pkl', 'rb'))
 
 st.header('Predição de Alzheimer')
 st.write('Este é um modelo de predição de Alzheimer. Para utilizá-lo, preencha os campos abaixo e clique em "Predizer".')
 
+show_data = st.toggle('Mostrar dados e análises', False)
+if show_data:
+  data_analysis(data)
 
 st.subheader('Insira os valores dos testes abaixo:')
 col1, col2, col3= st.columns(3)
