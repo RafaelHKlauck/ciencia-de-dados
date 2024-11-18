@@ -350,4 +350,6 @@ def data_analysis(alzheimers_data: DataFrame):
   clinical_history_charts()
   cognitive_assessment_charts()
   symptoms_charts()
+  st.write("Analisando os gráficos, é possível observar que as médias dos dados da sessão Avaliação Cognitiva são bem distintas entre os diagnósticos positivos e negativos. Além disso, o treemap abaixo mostra a distribuição dos diagnósticos de Alzheimer com base nas médias de categorias.")
   tree_map_chart(alzheimers_data)
+  st.write("Portanto, é possível concluir que a Avaliação Cognitiva é um fator importante para a predição de Alzheimer.")

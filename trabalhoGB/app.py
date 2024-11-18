@@ -57,10 +57,8 @@ if submit:
   }
 
   values = pd.DataFrame([values])
-  print(values)
-
+  
   results = model.predict(values)
-  print(results)
 
   if len(results) == 1:
     st.subheader('Resultado:')
